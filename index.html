@@ -4,13 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="input.css">
+    <script src="https://kit.fontawesome.com/203d7562fb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
     <title>RiseRevolt</title>
 </head>
-<body>
+<body class="bg-black ">
     <section class="section-1">
-        <div class="bg-slate-900">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis iste, ipsum aliquid odit, rem magnam explicabo voluptatum deserunt natus error maiores, fuga id.
+        <nav class="navbar bg-black h-20 z-10 w-full fixed">
+            <input type="checkbox"  name="" id="check" hidden>
+        <label for="check" class=" menu-icon float-right text-white cursor-pointer text-3xl leading-[80px] mr-10 lg:hidden">
+            <i class="fas fa-bars" id="btn"></i>
+        </label>
+            <img src="./images/logo.png" class="w-14 ml-12 inline-block mt-4"  alt="">
+            <ul class=" nav-items float-right mr-10 lg:flex leading-[80px] space-x-4 text-white rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center bg-black">
+                <li class="nav-links"><a class="nav-a" href="">Home</a></li>
+                <li class="nav-links"><a class="nav-a" href="">About</a></li>
+                <li class="nav-links"><a class="nav-a" href="">Contact</a></li>
+                <li class="nav-links"><a class="nav-a" href="">MetaAds</a></li>
+            </ul>
+
+        </nav>
+        <div class="background-1 bg-cover bg-center h-screen">
+            <div class="lg:grid lg:grid-cols-2 lg:w-[96%] lg:mx-auto pt-10  ">
+                <div class="lg:mt-36 mt-20 w-[80%] mx-auto">
+                    <h1 class="text-white font-bold text-3xl text-center lg:text-start lg:text-3xl">Welcome to <div class="typing"><span class="bg-black px-1">Rise<span class="text-[#4ce600]">Revolt</span></span></div></h1>
+                    <p class="font-semibold text-lg mt-5 text-justify">Welcome to RiseRevolt – your go-to hub for cutting-edge
+                         influencer marketing solutions. As experts in connect
+                         ing brands with social media influencers, we speciali
+                         ze in crafting and executing impactful campaigns. At 
+                         RiseRevolt, we play a pivotal role in leveraging the i
+                         nfluence and reach of social media personalities to enh
+                         ance your marketing strategies authentically. Choose u
+                         s for innovation, influence, and a marketing agency th
+                         at delivers results. Elevate your brand with RiseRevolt
+                          – where excellence meets execution.</p>
+                          <button class="bg-white mt-2 lg:mt-10 mx-3 hover:bg-black hover:text-white hover:border-white transition-all duration-300  p-1 btn" >Join Us</button>
+                          <button class="bg-white mt-2 lg:mt-10 mx-3 hover:bg-black hover:text-white hover:border-white transition-all duration-300  p-1 btn" >Contact</button>
+                </div>
+                <div class="hidden overflow-hidden relative w-[100%]  h-[700px] lg:block">
+                    <img src="./images/cover-img.png" class="lg:w-[600px] slide lg:mx-auto " alt="">
+                </div>
+            </div>
         </div>
     </section>
+
+    <script src="./index.js"></script>
 </body>
 </html>

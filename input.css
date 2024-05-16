@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: 'Montserrat';
+}
+
+.nav-items .nav-links .nav-a{
+    @apply rounded py-[7px] px-[13px] text-[17px]
+    hover:bg-white hover:text-black transition-all duration-300
+}
+
+#check:checked ~ .nav-items{
+    left: 0;
+}
+
+/* Section-1 */
+
+.background-1{
+    background-image: url('./images/background-1.png');
+}
+
+@keyframes typing {
+    0%, 100% { width: 0; }
+    50% { width: 42%; }
+  }
+  
+  @keyframes untyping {
+    0%, 100% { width: 42%; }
+    50% { width: 0; }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+
+  @media (min-width:1024px){
+    @keyframes typing {
+        0%, 100% { width: 0; }
+        50% { width: 30%; }
+      }
+      
+      @keyframes untyping {
+        0%, 100% { width: 30%; }
+        50% { width: 0; }
+      }
+      
+      @keyframes blink {
+        50% { border-color: transparent; }
+      }
+  }
+  
+  .typing {
+    position: relative;
+    top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white; /* adjust border thickness as needed */
+    display: inline-block; /* Ensures proper positioning of the text */
+    animation: typing 5s steps(25) infinite, blink 0.7s infinite step-start;
+  }
+  
+  .typing:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    animation: untyping 5s steps(25) infinite;
+    animation-delay: 3s; /* Delay before untyping starts */
+  }
+
+
+  .slide {
+    position: absolute;
+    top: 10px;
+    right: -20%; /* Start position */
+    animation: slide-in 1s forwards; /* Adjust animation duration */
+  }
+  
+  @keyframes slide-in {
+    0% { right: -20%; }
+    100% { right: 0; }
+  }
+
+
+  .btn{
+    border: 2px solid black;
+    box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
+  }
