@@ -21,6 +21,14 @@
     background-image: url('./images/background-1.png');
     
 }
+.hr{
+  margin: 80px auto 80px auto;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #EAF6F6;
+  border-width: 8px;
+  width: 4%;
+}
 
 @keyframes typing {
     0%, 100% { width: 0; }
