@@ -96,3 +96,15 @@
     border: 2px solid black;
     box-shadow: 10px 10px 0px 0px rgb(0, 0, 0);
   }
+
+  /* section2 */
+
+  .background-2{
+    background-image: url('./images/backgorund-2.png');
+  }
+
+  /* footer */
+
+  .footer{
+    background-image: url('./images/footer.png');
+  }
