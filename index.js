@@ -10,4 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   });
+
   
+  function composeEmail() {
+    // Specify the email address
+    var emailAddress = "khxrwaaa110.2005@gmail.com";
+    // Open the user's default email client with a new email window
+    window.location.href = "mailto:" + emailAddress;
+}
